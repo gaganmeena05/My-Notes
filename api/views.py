@@ -7,12 +7,6 @@ import datetime
 import json
 
 @api_view(['GET'])
-def getRoutes(request):
-    routes = [
-    ]
-    return Response(routes)
-
-@api_view(['GET'])
 def getNotes(request):
     notes = Note.objects.all()
     serializer =  NoteSerializer(notes, many=True)

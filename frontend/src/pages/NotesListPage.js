@@ -44,8 +44,7 @@ const NotesListPage = (history) => {
     }
 
     let updateNote = async() =>{      
-        let r = '/api/notes/'+noteid.id+'/update'
-        
+        let r = '/api/notes/'+noteid.id+'/update'        
         fetch(r,{
             method: "PUT",
             headers: {
